@@ -1,0 +1,6 @@
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+<van-cell-group>
+  <van-cell title="货物1" is-link value="详情" label="这是货物1的简述信息" border="{{ false }}" />
+  <van-cell title="货物2" is-link value="详情" label="这是货物2的简述信息" border="{{ false }}" />
+  <van-cell title="货物3" is-link value="详情" label="这是货物3的简述信息" border="{{ false }}" />
+</van-cell-group>

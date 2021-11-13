@@ -1,0 +1,69 @@
+<view class="btnField">
+  <van-button round icon="scan" type="primary" color="#3498db" bind:click="showInfo"> 扫 码 交 接 </van-button>
+
+</view>
+<view class="info">
+   <van-skeleton title row="3" loading="{{ loading }}">
+                <van-cell-group>
+                  <picker mode="selector" range="{{Items}}" bindchange="selectChange">
+                    <van-cell title="选择所需交接的货物ID" value="{{goodsID}}" />
+                  </picker>
+                  
+                  <van-cell title="出发地" value="{{depature}}" />
+                  <van-cell title="目的地" value="{{destnation}}" />
+                </van-cell-group>         
+   </van-skeleton>
+  </view>
+
+
+<view class="comfirmField">
+  <van-button round icon="passed" type="primary" color="#2ecc71" bind:click="confirm"> 确 认 交 接 </van-button>
+</view>
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="../../images/s2d.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    <image
+      slot="icon-active"
+      src="../../images/s2d.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    承运交接
+  </van-tabbar-item>
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="../../images/d2s.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    <image
+      slot="icon-active"
+      src="../../images/d2s.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    到货交接
+  </van-tabbar-item>
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="../../images/d2d.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    <image
+      slot="icon-active"
+      src="../../images/d2d.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    司机交接
+  </van-tabbar-item>
+ 
+</van-tabbar>

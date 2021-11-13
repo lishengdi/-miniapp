@@ -1,0 +1,128 @@
+
+<view class="radius">
+  <view class="searchArea">
+    <van-search value="{{ value }}" 
+    placeholder="请输入搜索关键词"
+     background="#546de5"
+      bind:search="onSearch"
+      shape="round"
+      />
+  </view>
+ 
+   
+  <view class="icons_row1">
+        <view class="icon_g1" bindtap="scan">
+           <view id="g1_img" > 
+             <image src="../../images/scan.png"></image> 
+           </view>
+           <view id="g1_text">
+              <text>扫 码</text>
+           </view>
+        </view>
+        <view class="icon_g2" bindtap="toHealthReport">
+           <view id="g2_img">
+             <image src="../../images/health.png"></image> 
+           </view>
+           <view id="g2_text">
+             <text>健康申报</text>
+           </view>
+        </view>
+
+        <view class="icon_g3" bindtap="toTranceRecord">
+          <view id="g3_img">
+            <image src="../../images/trance.png"></image> 
+          </view>
+          <view id="g3_text">
+            <text>物流溯源</text>
+          </view>
+        </view>
+
+        <view class="icon_g4" bindtap="toGoodsHandOver">
+          <view id="g4_img">
+            <image src="../../images/goodsHandOver.png"></image>
+          </view>
+          <view id="g4_text">
+            <text>货物交接</text>
+          </view>
+        </view>
+  </view>
+
+<!-- 第二行图标 -->
+  <view class="icons_row2">
+        <view class="icon_g5" bindtap="toStorageInfo">
+           <view id="g5_img" > 
+             <image src="../../images/seeOrder.png"></image> 
+           </view>
+           <view id="g5_text">
+              <text>查看订单</text>
+           </view>
+        </view>
+        <view class="icon_g6" bindtap="#">
+           <view id="g6_img">
+             <image src="../../images/moreService.png"></image> 
+           </view>
+           <view id="g6_text">
+             <text>更多业务</text>
+           </view>
+        </view>
+
+    
+  </view>
+
+
+</view>
+
+
+<view class="block1">
+   <text class="inner_text">当前订单：</text>
+   <van-icon name="add-o" size="30px" info="更多" bind:click="seeMore_out"/>
+   <view class="Record_field">
+          <view class="record">
+            <text bindtap="seeOutinfo_1">{{order_1}}</text>
+          </view>
+          <view class="record">
+            <text>{{order_2}}</text>
+          </view>
+          <view class="record">
+            <text>{{order_3}}</text>
+          </view>
+          <view class="record">
+            <text>{{order_4}}</text>
+          </view>
+   </view>
+</view>
+
+<van-toast id="van-toast" />
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="../../images/goods.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    <image
+      slot="icon-active"
+      src="../../images/goods.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    司机首页
+  </van-tabbar-item>
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="../../images/home.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    <image
+      slot="icon-active"
+      src="../../images/home.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    个人中心
+  </van-tabbar-item>
+ 
+</van-tabbar>

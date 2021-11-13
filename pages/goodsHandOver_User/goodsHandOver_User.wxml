@@ -1,0 +1,21 @@
+<view class="btnField">
+  <van-button round icon="scan" type="primary" color="#3498db" bind:click="showInfo"> 扫 码 交 接 </van-button>
+
+</view>
+<view class="info">
+   <van-skeleton title row="3" loading="{{ loading }}">
+                <van-cell-group>
+                  <picker mode="selector" range="{{Items}}" bindchange="selectChange">
+                    <van-cell title="选择所需交接的货物ID" value="{{goodsID}}" />
+                  </picker>
+                  
+                  <van-cell title="出发地" value="{{depature}}" />
+                  <van-cell title="目的地" value="{{destnation}}" />
+                </van-cell-group>         
+   </van-skeleton>
+  </view>
+
+
+<view class="comfirmField">
+  <van-button round icon="passed" type="primary" color="#2ecc71" bind:click="confirm"> 确 认 交 接 </van-button>
+</view>

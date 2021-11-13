@@ -1,0 +1,22 @@
+.btnField{
+  height: 300rpx;
+  width: auto;
+  /* background-color:pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.comfirmField{
+  height: 300rpx;
+  width: auto;
+  /* background-color:blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+.info{
+    margin-top: 20%;
+}

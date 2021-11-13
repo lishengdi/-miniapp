@@ -1,0 +1,11 @@
+<!--pages/check_warehouse/check_warehouse.wxml-->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+<van-cell-group>
+  <van-cell title="仓库c10045" value="更多" label="浙江省杭州市江干区下沙集散中心" border="{{ false }}" bind:click="toSeeMoreSrorageInfo" />
+  <van-cell title="仓库c96021" value="更多" label="浙江省嘉兴市海宁市物流集中仓" border="{{ false }}" />
+  <van-cell title="仓库c10038" value="更多" label="浙江省杭州市拱墅区市区网点" border="{{ false }}" />
+  <van-cell title="仓库c77431" value="更多" label="重庆两江中转场" border="{{ false }}" />
+  <van-cell title="仓库c11021" value="更多" label="安徽芜湖转运中心" border="{{ false }}" />
+  <van-cell title="仓库c97425" value="更多" label="浙江省湖州市吴兴米兰中转" border="{{ false }}" />
+  <van-cell title="仓库c34079" value="更多" label="广东省惠水市水口公司" border="{{ false }}" />
+</van-cell-group>

@@ -1,0 +1,15 @@
+<view class="index_image">
+  <image src="../../images/union.jpg"> 
+  </image>
+</view>
+
+
+
+  <navigator url="../index/login/login.wxml">
+  <view class="button">
+  <van-button type="default" size="large" bindtap="toLogin">登录</van-button>
+  <van-button type="primary" size="large" bindtap="toRegister">注册</van-button>
+</view>
+
+
+</navigator>

@@ -1,0 +1,48 @@
+.btnField{
+  height: 300rpx;
+  width: auto;
+  /* background-color:pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.comfirmField{
+  height: 300rpx;
+  width: auto;
+  /* background-color:blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+.info{
+    margin-top: 20%;
+}
+/* pages/goodsHandOver_d2s/goodsHandOver_d2s.wxss */
+.btField{
+  height: 250rpx;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  /* background-color: pink; */
+  font-size: 20px;
+  margin-top: 10px;
+}
+.Code{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+ /* background-color: pink; */
+}
+.canvas{
+  position: absolute;
+   left: 33%;
+   top: 30%
+}

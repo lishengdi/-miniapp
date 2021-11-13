@@ -1,0 +1,78 @@
+<!--pages/index/register/register.wxml-->
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="用户名"
+    icon="question-o"
+    placeholder="请输入用户名"
+    bind:click-icon="onClickIcon"
+  />
+
+  <van-field
+    value="{{ job_number }}"
+    type="job_number"
+    label="工号"
+    placeholder="请输入工号"
+    required
+    border="{{ false }}"
+  />
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="密码"
+    placeholder="请输入密码"
+    required
+    border="{{ false }}"
+  />
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="确认密码"
+    placeholder="请再次输入密码"
+    required
+    border="{{ false }}"
+  />
+
+  
+</van-cell-group>
+
+<van-cell-group>
+  <van-field
+    value="{{ sms }}"
+    center
+    clearable
+    label="输入电话号码"
+    placeholder="请输入电话号码"
+    border="{{ false }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary">
+      发送验证码
+    </van-button>
+  </van-field>
+</van-cell-group>
+
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    placeholder="输入验证码"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+
+<van-cell-group>
+  <van-field
+    value="{{ message }}"
+    label="文本框_自适应"
+    type="textarea"
+    placeholder="可以输入文本信息"
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+<van-button type="primary" size="large" bindtap="toResult">注册</van-button>

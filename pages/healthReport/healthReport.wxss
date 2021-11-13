@@ -1,0 +1,46 @@
+.title{
+  /* background-color: pink; */
+  height: 90rpx;
+  text-align: center;
+  line-height:90rpx;
+  font-size: 20px;
+}
+.check{
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #f2f3f5;
+}
+.check2{
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid #f2f3f5;
+}
+.dangerPlace{
+  width: 145px;
+  height: auto;
+  margin-left: 6%;
+  font-size: 300;
+  color: grey;
+}
+.dangerPlace text{
+  font-size: 14px;
+}
+.bt3{
+  margin-left: 12.5%;
+}
+.submit{
+  height: 300rpx;
+  width: auto;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+align-items: center;
+
+}

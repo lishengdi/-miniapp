@@ -1,0 +1,92 @@
+.radius{
+	height: 30%; 
+	width: 100%;
+	background: #546de5;
+	border-width: 0px 0px 0px 0px;	
+	border-style: solid;
+	border-radius: 0px 0px 35px 35px;
+	 position: absolute;
+	 top: 0px;left: 0px;
+}
+.info{
+	/* background-color: pink; */
+	width: 30%; height: 30%;
+	position: absolute;
+	left:30%; top:18%;
+	/* margin-left: 30%;  margin-top: 10%; */
+	font-size: 30px; font-weight: 900;
+	color:#fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.info text{
+	margin: 0px 0px;
+}
+.head{
+	position: absolute;
+	top:16%; left: 5%;
+	height: 80px;
+	width: 80px;
+	border-radius: 50px;
+}
+.block1{
+	height: 700rpx; 
+	width:92%;
+	background:#ecf0f1;
+	border-width: 0px 0px 0px 0px;	
+	border-style: solid;
+	border-radius: 25px 25px 25px 25px;	
+	position: absolute;
+	top:23%; left:4%;
+}
+.qrCode{
+  height: 200px;
+	width: 414px;
+	position: absolute;
+	top:38%; left:32%;
+}
+.settings{
+	height: 100rpx;
+	 width: 90rpx;
+	/* background-color: pink;  */
+	display: flex;
+	flex-direction: column;
+justify-content: center;
+align-items: center;
+	position: absolute;
+	top:19% ; left:80%;
+	color: #fff;
+}
+.rights{
+	 height: 120rpx;
+	 width: fit-content;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: flex-start;
+	 /* background-color: pink; */
+	 position: absolute;
+	 left: 30%;  top:5%;
+}
+#rights_t1{
+	font-size: 20px;
+	font-weight: 350;
+}
+#rights_t2{
+	font-size: 25px;
+	font-weight: 800;
+}
+#time{
+	/* background-color: pink; */
+	height: 80rpx;
+	width: 440rpx;
+	position: absolute;
+	top:80%;left: 19%;
+	color: #000;
+	font-size: 20px;
+}
+.faseID{
+	position: absolute;
+	left:23%;
+	top:80%
+}

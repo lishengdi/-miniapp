@@ -1,0 +1,10 @@
+<view class="title">{{storageName}}详情</view>
+
+<van-panel title="{{storageName}}"desc="{{position}}" status="{{total}}">
+  <view class="info">
+    <text class="capacity">{{capacity}}</text>
+    <text class="temperature">{{temperature}}</text>
+    <text class="humidity">{{humidity}}</text>
+    <text class="condition">{{condition}}</text>
+  </view>
+</van-panel>

@@ -1,0 +1,30 @@
+<!--pages/TraceRecord/TraceRecord.wxml-->
+<image id="headimage" src="{{headImgSrc}}" mode="scaleToFill">  </image>
+<view id="headText">
+  <text>物流溯源信息</text>
+</view>
+<view class="search_area">
+
+<view class="img">
+  <image src="../../images/search.png" style="width:30px;height:30px"></image>
+</view>
+
+<view class="input">
+  <input type="text" name="goodsID" placeholder="请输入所查货物ID" value='{{selectedID}}'/>
+</view>
+ 
+ <view class="btn">
+    <button style="width:100px;height:35px" bindtap="click">搜 索</button>
+   </view>
+
+
+</view>
+
+  <picker mode="selector" range="{{Items}}" bindchange="selectChange">
+    <view class="bt2"> 
+      <image src="../../images/sorting-reverse.png"></image>
+     <text> 点此快速选择近期记录</text>
+    </view>
+   </picker>
+
+

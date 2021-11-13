@@ -1,0 +1,54 @@
+<view class="title">
+  <text>健 康 申 报</text>
+</view>
+<van-cell-group>
+  <van-cell title="今日居住地" value="{{location}}" bind:click="chooseLocation"/> 
+</van-cell-group>
+<view class="check">
+    <view class="bt1">
+      <van-checkbox value="{{ifFever}}" bind:change="ifFever" checked-color="red">已发烧</van-checkbox>
+    </view>
+    <view class="bt2">
+      <van-checkbox value="{{ifContact}}" bind:change="ifContact" checked-color="red">接触高危人员</van-checkbox>
+    </view>
+</view>
+
+<view class="check2">
+  <view class="bt3">
+    <van-checkbox value="{{toDangerPlace}}" bind:change="toDangerPlace" checked-color="red">近14日经过高风险地区</van-checkbox> 
+  </view>
+  <view class="dangerPlace">
+    <text>{{dangerPlace}}</text>
+  </view>
+</view>      
+<van-cell-group>
+  <van-field
+    value="{{ others }}"
+    label="其他情况"
+    type="textarea"
+    placeholder="请输入其他情况"
+    autosize
+    bind:change="sendMessage"
+  >
+  </van-field>
+</van-cell-group>
+
+<van-popup 
+show="{{ show }}" 
+bind:close="onClose"
+position="bottom"
+custom-style="height: 45%;">
+  <van-area
+   area-list="{{ areaList }}" 
+   value="330104"
+   bind:confirm="locationConfirm"
+   bind:cancel="onClose"
+   />
+</van-popup>
+
+<view class="submit">
+    <view class="bt4">
+      <van-button round type="info" bind:click="checkForSubmit">提交今日健康申报</van-button>
+    </view> 
+</view>
+<van-toast id="van-toast" />

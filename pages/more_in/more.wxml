@@ -1,0 +1,7 @@
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+<van-cell-group>
+  <van-cell title="sony WH-1000XM4" is-link value="详情" label="Sony电子中国" border="{{ false }}" bind:click="more" />
+  <van-cell title="Sony ILCE-Alpha 1" is-link value="详情" label="Sony数码影像" border="{{ false }}" />
+  <van-cell title="DJI Mavic Pro3" is-link value="详情" label="深圳DJI" border="{{ false }}" />
+</van-cell-group>
+

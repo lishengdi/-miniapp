@@ -1,0 +1,174 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/homePageForPerson/homePageForPerson",
+          "pathName": "pages/homePageForPerson/homePageForPerson",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/test/demo",
+          "pathName": "pages/test/demo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/homePageForUser/homePageForUser",
+          "pathName": "pages/homePageForUser/homePageForUser",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/healthReport_success/healthReport_success",
+          "pathName": "pages/healthReport_success/healthReport_success",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/check_warehouse/warehouse1_more_info/warehouse1_more_info",
+          "pathName": "pages/check_warehouse/warehouse1_more_info/warehouse1_more_info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/check_warehouse/check_warehouse",
+          "pathName": "pages/check_warehouse/check_warehouse",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/register/register",
+          "pathName": "pages/index/register/register",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/success_register/success_registerr",
+          "pathName": "pages/index/success_register/success_registerr",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/login/login",
+          "pathName": "pages/index/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/more_in/more",
+          "pathName": "pages/more_in/more",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/more_in/C01/C01",
+          "pathName": "pages/more_in/C01/C01",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/more_out/more",
+          "pathName": "pages/more_out/more",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/login/login",
+          "pathName": "pages/index/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/healthReport/healthReport",
+          "pathName": "pages/healthReport/healthReport",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/homePageForDriver/homePageForDriver",
+          "pathName": "pages/homePageForDriver/homePageForDriver",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 16,
+          "name": "pages/goodsHandOver_d2d/goodHandOver_d2d",
+          "pathName": "pages/goodsHandOver_d2d/goodHandOver_d2d",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/goodsHandOver_d2s/goodsHandOver_d2s",
+          "pathName": "pages/goodsHandOver_d2s/goodsHandOver_d2s",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goodsHandOver_s2d/goodsHandOver_s2d",
+          "pathName": "pages/goodsHandOver_s2d/goodsHandOver_s2d",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/TranceRecord/TranceRecord",
+          "pathName": "pages/TranceRecord/TranceRecord",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goodsHandOver_User/goodsHandOver_User",
+          "pathName": "pages/goodsHandOver_User/goodsHandOver_User",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goodsInfoChange/goodsInfoChange",
+          "pathName": "pages/goodsInfoChange/goodsInfoChange",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/seeGoodsInfo/seeGoodsInfo",
+          "pathName": "pages/seeGoodsInfo/seeGoodsInfo",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

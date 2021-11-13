@@ -1,0 +1,55 @@
+/* pages/TraceRecord/TraceRecord.wxss */
+#headimage{
+  width: 414px;
+  height: 95px;
+}
+#headText{
+  height: 40px;
+  text-align: center;
+  /* background-color: pink; */
+  position:center;
+  margin:10px 10px;
+  line-height: 40px;
+  font-size: x-large;
+  
+}
+.search_area{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 65px;
+  margin: 20px auto;
+  /* background-color:pink; */
+}
+.input input{
+  border: 1px solid silver;
+ width:200px;
+  height: 35px;
+  line-height: 35px;
+}
+button{
+  height: 35px;
+  line-height: 35px;
+   text-align: center;
+  color:#fff;
+  background-color:skyblue;
+}
+
+.bt2 image{
+  width: 30px;
+  height: 30px;
+}
+.bt2 text{
+  font-size: 20;
+}
+.bt2{
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

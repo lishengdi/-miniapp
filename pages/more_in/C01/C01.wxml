@@ -1,0 +1,5 @@
+<view class="title">C01货物详情</view>
+
+<van-panel title="C99090" desc="Sony WH1000XM4" status="绿码">
+  <view>2021-4-08 12:13 入库 C10010仓收入 操作人：李晟迪 </view>
+</van-panel>

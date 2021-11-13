@@ -1,0 +1,49 @@
+<view class="head">
+  <text>{{goodsName}} 货物信息修改</text>
+</view>
+<view class="basicInfo">
+   <text>基本信息</text>
+ </view>
+ <van-cell-group>
+  <van-field
+    value="{{ goodsName }}"
+    label="货物名称"
+    required='true'
+    placeholder="请输入商品名"
+    bind:change="setGoodsName"
+  />
+</van-cell-group>
+<view class="basicInfo">
+   <text>货物状态</text>
+ </view>
+ <van-cell-group>
+  <van-field
+    value="{{ goodsPlace }}"
+    required='true'
+    label="所在地"
+    placeholder="请输入商品所在地"
+    bind:change="setGoodsPlace"
+  />
+  <van-cell title="货物健康状态" value="点击修改" center='true' is-link='true' bindtap="toHealthInfoChange"/>
+</van-cell-group>
+<view class="basicInfo">
+   <text>其他信息</text>
+ </view>
+ <van-cell-group>
+  <van-field
+    value="{{ etc }}"
+    label="备注"
+    placeholder="请输入备注"
+    bind:change="setEtc"
+  />
+  <van-field
+    value="{{ special }}"
+    label="特殊条件"
+    placeholder="请输入货物特殊条件"
+    bind:change="setSpecial"
+  />
+</van-cell-group>
+
+<view class="btn">
+  <van-button round type="info" size="large" bindtap="submit">提 交 修 改</van-button>
+</view>

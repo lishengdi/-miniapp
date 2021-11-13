@@ -1,0 +1,70 @@
+<view class="radius"> 
+      <view class="info">
+          <view class="info_text">
+            <text id="name">李晟迪</text>
+          </view>
+          <view class="info_tag">
+            <van-tag type="{{status}}">{{status_text}}</van-tag>
+          </view>
+      </view>    
+  <image src="../../images/person_head.jpg" class="head"></image>
+ 
+  <view class="settings">
+      <view class="icon">
+        <van-icon name="setting-o" size="30px" color="#fff" />
+      </view>
+      <view class="icon_text">
+          <text>设置</text>
+      </view>
+  </view>
+</view>
+
+<view class="block1">
+    <view class="rights">
+        <text id="rights_t1">职务：</text>
+        <text id="rights_t2">{{rights}}</text>
+    </view>
+    <view id="time">{{time}}</view>
+</view>
+
+<view class="qrCode">
+  <canvas class='canvas' canvas-id='canvas' bindlongtap='save'></canvas>
+</view>
+<view class="faseID">
+  <van-button icon="smile" type="info" bind:click="startAuth">
+     点此使用生物认证验证身份
+  </van-button>
+</view>
+<van-tabbar active="{{ active }}" bind:change="onChange" > 
+<van-tabbar-item>
+    <image
+      slot="icon"
+      src="../../images/goods.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    <image
+      slot="icon-active"
+      src="../../images/goods.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    货物
+  </van-tabbar-item>
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="../../images/home.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    <image
+      slot="icon-active"
+      src="../../images/home.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    个人中心
+  </van-tabbar-item>
+ 
+</van-tabbar>

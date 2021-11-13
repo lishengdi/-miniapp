@@ -1,0 +1,27 @@
+<!--pages/index/login/login.wxml-->
+<view class="login_box">
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="账号"
+    icon="question-o"
+    placeholder="请输入电话/工号"
+    bind:click-icon="onClickIcon"
+  />
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="密码"
+    placeholder="请输入密码"
+    required
+    border="{{ false }}"
+  />
+</van-cell-group>
+</view>
+
+<view class="login_button"> 
+<van-button type="primary" size="large" bindtap="tryLogin" >登 录</van-button>
+</view>

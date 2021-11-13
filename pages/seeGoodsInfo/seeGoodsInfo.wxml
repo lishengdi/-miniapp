@@ -1,0 +1,38 @@
+<!--pages/seeGoodsInfo/seeGoodsInfo.wxml-->
+<view class="head">
+  <text>{{goodsName}} 货物信息</text>
+</view>
+ <view class="basicInfo">
+   <text>基本信息</text>
+ </view>
+ <van-cell-group>
+           
+  <van-cell title="货物ID" value="C10086" />
+  <van-cell title="货物名称" value="iPhone 12 ProMax" />
+</van-cell-group>
+<view class="basicInfo">
+   <text>货物状态</text>
+ </view>
+<van-cell-group>
+  <van-cell title="所在地" value="{{location}}" center="true" />
+  <van-cell  value="点击修改健康状态" center="true" bind:click="tohealthReport">
+  <view slot="title">
+    <view class="van-cell-text">货物健康状态</view>
+    <!-- type="danger" 红码 type="success" 绿码 type="warning" 黄码 -->
+    <van-tag type="{{tagcolor}}">{{health_status}}</van-tag>
+  </view>
+  </van-cell>
+</van-cell-group>
+
+<view class="basicInfo">
+   <text>其他信息</text>
+ </view>
+ <van-cell-group>
+  <van-cell title="备注" value="{{remark}}" />
+  <van-cell title="特殊条件" value="{{demand}}" />
+  <van-cell title="溯源记录" value="点此查看记录" bind:click="toTranceRecord" />
+</van-cell-group>
+<view class="edit_bt">
+  <van-button icon="edit" type="primary" size="large" bindtap="editInfo">点此更改此货物信息</van-button>
+</view>
+

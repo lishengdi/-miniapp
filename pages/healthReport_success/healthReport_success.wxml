@@ -1,0 +1,37 @@
+<!--pages/healthReport_success/healthReport_success.wxml-->
+<!-- // 绿色：#2ecc71
+  // 红色：#EA2027
+  // 黄码：#f1c40f -->
+<van-toast id="van-toast" />
+<view class="Navigation"> 
+          <view class="center-text">
+              <text>调整货物健康码</text>
+          </view>
+</view>
+<van-notice-bar
+  left-icon="volume-o"
+  text="c10086 货物入库检测为红码！  c10010 货物在库检测为红码！ "
+/>
+<van-search value="{{value}}" 
+placeholder="请输入所要调整的货物ID"
+bind:search="onSearch"
+/>
+    <view class="qrCode">
+      <canvas class='canvas' canvas-id='canvas' bindlongtap='save'></canvas>
+    </view>
+<view class="adjustField">
+  <view class="fieldText">
+      <text>
+        请选择所需调整的风险项
+      </text>
+  </view>
+   <view class="adjbutton">
+      <van-button icon="qr" type="primary" color="#2ecc71" click="Event" bind:click="toGreen">暂无风险</van-button>
+   </view>
+  <view class="adjbutton">
+    <van-button  icon="qr" type="primary" color="#f1c40f" bind:click="toYellow">可疑风险</van-button>
+  </view>
+  <view class="adjbutton">
+    <van-button icon="qr" type="primary" color="#EA2027" bind:click="toRed">确认风险</van-button>
+  </view>
+</view>

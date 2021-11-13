@@ -1,0 +1,41 @@
+/* pages/healthReport_success/healthReport_success.wxss */
+.Navigation{
+  height: 40px;
+  background-color:#ecf0f1;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  line-height: 40px;
+}
+
+.center-text{
+  font-size: 20px;
+  position: absolute;
+  left:32%
+}
+.qrCode{
+  height: 200px;
+  width: 414px;
+  position: absolute;
+  top:25%;   left:32%
+}
+.adjustField{
+  height: 300px;
+  position: absolute;
+  top:55%;left: 23%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+}
+.adjbutton{
+    margin-top: 20px;
+}
+.fieldText{
+   font-size: 20px;
+   text-align: center;
+   height: 40px;
+   line-height: 10px;
+}

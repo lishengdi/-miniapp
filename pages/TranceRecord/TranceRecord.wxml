@@ -1,0 +1,22 @@
+<view class="headtext">
+<text>{{superInfo}}溯源信息</text>
+</view>
+<view class="block"></view>
+<van-steps 
+  steps="{{ steps }}"
+  active="{{ active }}"
+  direction="vertical"
+  active-color="#ee0a24"
+/>
+
+<van-action-sheet
+  show="{{show}}"
+  actions="{{ actions }}"
+  bind:close="onClose"
+  bind:select="onSelect"
+  description="当前货物节点情况"
+/>
+<view class="blockchain">
+    <van-cell title="当前货物共识完成度：{{pesent}}%" value="查看各节点共识情况" is-link bind:click="seechain"/>
+    <van-progress percentage="70" /> 
+</view>

@@ -1,0 +1,8 @@
+/* pages/index/login/login.wxss */
+.login_button{
+  margin-top: 0%;
+}
+
+.login_box{
+  margin-top: 20%;
+}

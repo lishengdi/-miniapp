@@ -1,0 +1,8 @@
+<!--pages/index/success_register/success_registerr.wxml-->
+<view class="success_img" style="width: 181rpx; height: 193rpx; display: block; box-sizing: border-box">
+  <image src="../../../images/success.png">
+  </image>
+</view>
+<view class="button">
+<van-button plain type="primary" bindtap="toLogin">注册成功 返回</van-button>
+</view>

@@ -1,0 +1,118 @@
+
+<view class="radius">
+  <van-icon name="scan" size="50px" bind:click="scan"/>
+  <van-search value="{{value}}" 
+placeholder="请输入所要查询的货物ID"
+bind:search="onSearch"
+background="#546de5"
+shape="round"
+/>
+   
+  <view class="icons">
+        <view class="icon_g1" bindtap="toStorageInfo">
+           <view id="g1_img" > 
+             <image src="../../images/restore.png"></image> 
+           </view>
+           <view id="g1_text">
+              <text>库存信息</text>
+           </view>
+        </view>
+        <view class="icon_g2" bindtap="toTranceRecord">
+           <view id="g2_img">
+             <image src="../../images/trance.png"></image> 
+           </view>
+           <view id="g2_text">
+             <text>溯源信息</text>
+           </view>
+        </view>
+
+        <view class="icon_g3" bindtap="toGoodHandOver">
+          <view id="g3_img">
+            <image src="../../images/goodsHandOver.png"></image>
+          </view>
+          <view id="g3_text">
+            <text>货物交接</text>
+          </view>
+        </view>
+
+        <view class="icon_g4" bindtap="toHealthReport">
+          <view id="g4_img">
+            <image src="../../images/health.png"></image>
+          </view>
+          <view id="g4_text">
+            <text>健康申报</text>
+          </view>
+        </view>
+  </view>
+    
+</view>
+<view class="block1">
+   <text class="inner_text">最近出库</text>
+   <van-icon name="add-o" size="30px" info="更多" bind:click="seeMore_out"/>
+   <view class="Record_field">
+          <view class="record">
+            <text bindtap="seeOutinfo_1">{{outRecord_1}}</text>
+          </view>
+          <view class="record">
+            <text>{{outRecord_2}}</text>
+          </view>
+          <view class="record">
+            <text>{{outRecord_3}}</text>
+          </view>
+          <view class="record">
+            <text>{{outRecord_4}}</text>
+          </view>
+   </view>
+</view>
+<view class="block2">
+  <text class="inner_text">最近入库</text>
+  <van-icon name="add-o" size="30px" info="更多" bind:click="seeMore_in"/>
+  <view class="Record_field">
+            <view class="record">
+              <text>{{inRecord_1}}</text>
+            </view>
+            <view class="record">
+              <text>{{inRecord_2}}</text>
+            </view>
+            <view class="record">
+              <text>{{inRecord_3}}</text>
+            </view>
+            <view class="record">
+              <text>{{inRecord_4}}</text>
+            </view>
+  </view>
+</view>
+<van-toast id="van-toast" />
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="../../images/goods.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    <image
+      slot="icon-active"
+      src="../../images/goods.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    货物
+  </van-tabbar-item>
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="../../images/home.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    <image
+      slot="icon-active"
+      src="../../images/home.png"
+      mode="aspectFit"
+      style="width: 40px; height: 25px;"
+    />
+    个人中心
+  </van-tabbar-item>
+ 
+</van-tabbar>

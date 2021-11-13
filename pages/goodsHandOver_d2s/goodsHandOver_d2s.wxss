@@ -1,0 +1,40 @@
+/* pages/goodsHandOver_d2s/goodsHandOver_d2s.wxss */
+.btField{
+  height: 250rpx;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.successIMG{
+  /* background-color: blue; */
+  height: 450rpx;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.successIMG image{
+  width: 30%;
+  height: 45%; 
+}
+
+.text{
+  /* background-color: pink; */
+  font-size: 20px;
+  margin-top: 10px;
+}
+.Code{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+ /* background-color: pink; */
+}
+.canvas{
+  position: absolute;
+   left: 33%;
+   top: 30%
+}
